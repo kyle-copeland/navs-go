@@ -1,1 +1,3 @@
 title: Go Conference
+sass:
+    style: compressed
