@@ -1,6 +1,8 @@
 .Workshop {
     margin: 20px;
     .Workshop-Image {
+        // TODO: Remove if we end up using images
+        display: none;
         &.pull-left {
             margin-right: 10px;
         }
@@ -8,5 +10,9 @@
         &.pull-right {
             margin-left: 10px;
         }
+    }
+
+    .Workshop-description {
+        display: none;
     }
 }

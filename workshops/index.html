@@ -5,11 +5,24 @@ title: Workshops
 <h1>Workshops</h1>
 <div class="Workshop-list">
     {% assign workshops = site.workshops | sort: 'title' %}
-    {% for workshop in workshops %}
+    <p>Morning</p>
+    {% assign morningWorkshops = workshops | where: "time", "morning" %}
+    {% for workshop in morningWorkshops %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="Workshop clearfix">
         <img src="{{ workshop.image }}" class="Workshop-Image {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}"/>
-        <p>{{ workshop.output }}</p>
+        <p class="Workshop-header">{{ workshop.title }} | {{ workshop.speaker }}</p>
+        <div class="Workshop-description">{{ workshop.output }}</div>
+    </div>
+    {% endfor %}
+    <p>Afternoon</p>
+    {% assign eveningWorkshops = workshops | where: "time", "afternoon" %}
+    {% for workshop in eveningWorkshops %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    <div class="Workshop clearfix">
+        <img src="{{ workshop.image }}" class="Workshop-Image {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}"/>
+        <p class="Workshop-header">{{ workshop.title }} | {{ workshop.speaker }}</p>
+        <div class="Workshop-description">{{ workshop.output }}</div>
     </div>
     {% endfor %}
 </div>
