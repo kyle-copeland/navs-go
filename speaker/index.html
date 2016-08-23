@@ -2,5 +2,12 @@
 layout: default
 title: Speaker
 ---
-<h1>Speaker: Coming Soon</h1>
-
+{% for speaker in site.speaker %}
+<div class="Speaker panel panel-default">
+    <div class="panel-body">
+        <img class="Speaker-image" src="{{ site.image-dir }}/{{ speaker.image }}" />
+        <h2>{{ speaker.name }}</h2>
+        {{ speaker.output }}
+    </div>
+</div>
+{% endfor %}

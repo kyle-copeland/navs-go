@@ -1,5 +1,7 @@
 title: Go Conference
+image-dir: /images
 sass:
     style: compressed
 collections:
 - workshops
+- speaker
