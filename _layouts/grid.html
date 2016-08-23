@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script type="application/javascript" src="/js/jquery.min.js"></script>
+    <title>Go Conference - Sunland Navigators</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row Information">
+        <div class="col-xs-12 col-md-6 Information-title">
+            Go
+        </div>
+        <div class="col-md-6">
+            <div class="Information-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <td><b>Cost</b></td>
+                        <td><b>Dates</b></td>
+                        <td><b>Location</b></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>General Cost: $150</td>
+                        <td>October 28-30, 2016</td>
+                        <td>Forest Home Camp</td>
+                    </tr>
+                    <tr>
+                        <td>Freshman Cost: $75</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% include grid-header.html %}
+        </div>
+    </div>
+    <div class="row Verse">
+        <div class="col-xs-12 col-md-10">
+            {{ content }}
+        </div>
+    </div>
+</div>
+<script type="application/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+</html>

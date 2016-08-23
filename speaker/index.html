@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: grid
 title: Speaker
 ---
 {% for speaker in site.speaker %}
-<div class="Speaker panel panel-default">
-    <div class="panel-body">
-        <img class="Speaker-image" src="{{ site.image-dir }}/{{ speaker.image }}" />
-        <h2>{{ speaker.name }}</h2>
-        {{ speaker.output }}
-    </div>
+<div class="Speaker">
+    <img class="Speaker-image" src="{{ site.image-dir }}/{{ speaker.image }}" />
+    <h2>{{ speaker.name }}</h2>
+    {{ speaker.output }}
 </div>
 {% endfor %}
