@@ -6,6 +6,14 @@
 @import "workshop";
 @import "speaker";
 
+@font-face {
+    font-family: minionpro;
+    src: url(/fonts/MinionPro-Regular.otf) format("opentype");
+}
+
+p {
+    font-family: minionpro;
+}
 .navs-logo {
     max-width: 100%;
     max-height: 100%;
@@ -22,7 +30,7 @@
 
 .Information {
     .Information-title {
-        font-size: 200px;
+        max-width:100%
     }
 
     .Information-card {
@@ -37,8 +45,34 @@
             }
         }
     }
+
+    height: 230px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 30px 30px 0 30px;
+    background-image: url('/images/background.png');
+}
+
+.Verse {
+    margin-top: 230px;
 }
 
 body .container-fluid {
     padding: 30px;
 }
+
+#speaker {
+    height: 256px;
+}
+
+.section {
+    box-sizing: content-box;
+}
+.section:target {
+    padding-top: 230px;
+}
+
+

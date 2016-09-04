@@ -1,0 +1,9 @@
+<div id="speaker" class="section">
+{% for speaker in site.speaker %}
+<div class="Speaker">
+    <img class="Speaker-image" src="{{ site.image-dir }}/{{ speaker.image }}" />
+    <h2>{{ speaker.name }}</h2>
+    {{ speaker.output }}
+</div>
+{% endfor %}
+</div>
