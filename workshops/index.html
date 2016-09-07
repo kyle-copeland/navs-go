@@ -2,10 +2,10 @@
 layout: grid
 title: Workshops
 ---
-<h1>Workshops</h1>
 <div class="Workshop-list">
+    <div class="col-xs-12 col-md-6">
     {% assign workshops = site.workshops | sort: 'title' %}
-    <p>Morning</p>
+    <h2>Morning Sessions</h2>
     {% assign morningWorkshops = workshops | where: "time", "morning" %}
     {% for workshop in morningWorkshops %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -15,7 +15,9 @@ title: Workshops
         <div class="Workshop-description">{{ workshop.output }}</div>
     </div>
     {% endfor %}
-    <p>Afternoon</p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+    <h2>Afternoon Sessions</h2>
     {% assign eveningWorkshops = workshops | where: "time", "afternoon" %}
     {% for workshop in eveningWorkshops %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -25,4 +27,5 @@ title: Workshops
         <div class="Workshop-description">{{ workshop.output }}</div>
     </div>
     {% endfor %}
+    </div>
 </div>
