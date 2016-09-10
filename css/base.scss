@@ -8,7 +8,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
-p.verse, .Speaker .Speaker-name, .Workshop-list p{
+p.verse, .Speaker .Speaker-name, .Workshop-list .Workshop-header div{
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 300;
     font-size: 35px;
@@ -34,10 +34,13 @@ p.verse, .Speaker .Speaker-name, .Workshop-list p{
         width: 100px;
     }
 }
-
+.row {
+    padding: 30px;
+}
 .Information {
     .Information-title {
-        max-width:100%
+        max-width:100%;
+        margin-bottom: 15px;
     }
 
     .Information-card {
@@ -53,19 +56,7 @@ p.verse, .Speaker .Speaker-name, .Workshop-list p{
             }
         }
     }
-
-    height: 350px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    padding: 30px 30px 0 30px;
-    background-image: url('/images/background.png');
-}
-
-.Verse {
-    margin-top: 350px;
+    background: linear-gradient(-104deg, #e63ebf, #08b9cb, #169edc);
 }
 
 body .container-fluid {
@@ -76,17 +67,15 @@ body .container-fluid {
     height: 256px;
 }
 
-.section {
-    box-sizing: content-box;
-}
-.section:target {
-    padding-top: 350px;
-}
-
 .navbar-nav .register {
     background-color: #8880C7;
 }
 
 .nav.nabar-nav {
     display: inline
+}
+
+iframe {
+   width: 100%;
+   height: 500px;
 }

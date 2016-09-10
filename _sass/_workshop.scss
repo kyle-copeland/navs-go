@@ -15,4 +15,19 @@
     .Workshop-description {
         display: none;
     }
+
+    .Workshop-header {
+        display: block;
+        width: 100%;
+        .Workshop-Title, .Workshop-Author {
+            font-size: 25px;
+            width: 50%;
+            display: inline-block;
+            padding: 5px;
+        }
+         border-bottom: 1px solid;
+         border-bottom-image: linear-gradient(-104deg, #e63ebf, #08b9cb, #169edc);
+         -webkit-border-image: -webkit-gradient(linear, left bottom, right bottom, from(#169edc), to(#e63ebf))0 0 100% 0 stretch
+    }
+
 }

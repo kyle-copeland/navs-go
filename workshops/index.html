@@ -11,7 +11,9 @@ title: Workshops
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="Workshop clearfix">
         <img src="{{ workshop.image }}" class="Workshop-Image {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}"/>
-        <p class="Workshop-header">{{ workshop.title }} | {{ workshop.speaker }}</p>
+        <div class="Workshop-header">
+            <div class="Workshop-Title">{{ workshop.title }}</div><div class="Workshop-Author"> {{ workshop.speaker }}</div>
+        </div>
         <div class="Workshop-description">{{ workshop.output }}</div>
     </div>
     {% endfor %}
@@ -23,7 +25,9 @@ title: Workshops
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="Workshop clearfix">
         <img src="{{ workshop.image }}" class="Workshop-Image {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}"/>
-        <p class="Workshop-header">{{ workshop.title }} | {{ workshop.speaker }}</p>
+        <div class="Workshop-header">
+            <div class="Workshop-Title">{{ workshop.title }}</div><div class="Workshop-Author"> {{ workshop.speaker }}</div>
+        </div>
         <div class="Workshop-description">{{ workshop.output }}</div>
     </div>
     {% endfor %}
