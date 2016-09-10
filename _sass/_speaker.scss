@@ -4,4 +4,9 @@
         margin-right: 15px;
         float: left;
     }
+
+    border-bottom: 1px solid;
+    -webkit-border-image: -webkit-gradient(linear, left bottom, right bottom, from(#169edc), to(#e63ebf))0 0 100% 0 stretch;
+
+    padding: 10px;
 }
