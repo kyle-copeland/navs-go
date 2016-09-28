@@ -1,6 +1,6 @@
 ---
 title: Dating
-speaker: TBD
+speaker: Dave and Heather Molascon
 image: http://placekitten.com/250/250
 time: afternoon
 ---
