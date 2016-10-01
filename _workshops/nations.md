@@ -1,5 +1,5 @@
 ---
-title: The Nations
+title: God's Heart for the Nations
 speaker: Jecka Walker
 image: http://placekitten.com/250/250
 time: morning
