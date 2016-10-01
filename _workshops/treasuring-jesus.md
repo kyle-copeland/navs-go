@@ -1,5 +1,5 @@
 ---
-title: Treasuring Jesus through all stages of life
+title: Treasuring Christ...a Life-long Pursuit
 speaker: Don Allen
 image: http://placekitten.com/250/250
 time: morning

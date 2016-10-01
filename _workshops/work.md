@@ -1,5 +1,5 @@
 ---
-title: The Value and Theology of Work
+title: The Value and Theology of Work (Seniors Only)
 speaker: Kyu Ho Lee
 image: http://placekitten.com/250/250
 time: morning
