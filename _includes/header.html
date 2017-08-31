@@ -11,7 +11,7 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav">
+            <ul class="nav nav-pills nav-justified">
                 {% assign pages = site.pages | sort: 'title' | reverse %}
                 {% for page in pages  %}
                     {% if page.title %}
