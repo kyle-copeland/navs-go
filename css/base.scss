@@ -40,9 +40,13 @@ p.verse, .Speaker .Speaker-name, .Workshop-list .Workshop-header div{
     padding: 30px;
 }
 .Information {
+    .Information-title-container {
+      text-align: center;
+
+    }
+
     .Information-title {
-        max-width:100%;
-        margin-bottom: 15px;
+        width: 50%;
     }
 
     .Information-card {
@@ -58,7 +62,7 @@ p.verse, .Speaker .Speaker-name, .Workshop-list .Workshop-header div{
             }
         }
     }
-    background: linear-gradient(-104deg, #017f8d, #bbd8b9);
+    background: linear-gradient(-104deg, #bbd8b9, #017f8d);
 }
 
 body .container-fluid {
