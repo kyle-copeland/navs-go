@@ -6,13 +6,39 @@ title: Workshops
     <div class="col-xs-12 col-md-6">
     {% assign workshops = site.workshops | sort: 'title' %}
     <h2>Morning Sessions</h2>
-    {% for workshop in workshops %}
     <div class="Workshop clearfix">
-        <img src="{{ workshop.image }}" class="Workshop-Image {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}"/>
         <div class="Workshop-header">
-            <div class="Workshop-Title">{{ workshop.title }}</div><div class="Workshop-Author"> {{ workshop.speaker }}</div>
+            <div class="Workshop-Title">8 Reasons to be committed to God's Word</div><div class="Workshop-Author">Don Allen</div>
         </div>
-        <div class="Workshop-description">{{ workshop.output }}</div>
     </div>
-    {% endfor %}
+    <div class="Workshop clearfix">
+        <div class="Workshop-header">
+            <div class="Workshop-Title">Dating and Relationships</div><div class="Workshop-Author">Dave and Kelly Sasaki</div>
+        </div>
+    </div>
+    <div class="Workshop clearfix">
+        <div class="Workshop-header">
+            <div class="Workshop-Title">Encountering Jesus</div><div class="Workshop-Author">Janaye Hutton</div>
+        </div>
+    </div>
+    <div class="Workshop clearfix">
+        <div class="Workshop-header">
+            <div class="Workshop-Title">Evangelism</div><div class="Workshop-Author">Rich Redel</div>
+        </div>
+    </div>
+    <div class="Workshop clearfix">
+        <div class="Workshop-header">
+            <div class="Workshop-Title">How to have a Thriving Devotional Life</div><div class="Workshop-Author">Dan Lenz</div>
+        </div>
+    </div>
+    <div class="Workshop clearfix">
+        <div class="Workshop-header">
+            <div class="Workshop-Title">Studying Scripture for all it's Worth</div><div class="Workshop-Author">TJ Hayes</div>
+        </div>
+    </div>
+    <div class="Workshop clearfix">
+        <div class="Workshop-header">
+            <div class="Workshop-Title">The Value and Theology of Work (Seniors Only)</div><div class="Workshop-Author">Kyu Ho Lee</div>
+        </div>
+    </div>
 </div>
